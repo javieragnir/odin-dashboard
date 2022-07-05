@@ -39,6 +39,11 @@ body {
     row-gap: 8px;
 }
 
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #3b82f6;
+}
+
 .header-top,
 .header-bottom {
     display: flex;
