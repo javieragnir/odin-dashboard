@@ -126,18 +126,33 @@ body {
     grid-column: 2 / 3;
     display: grid;
     gap: 16px;
-    grid-template-columns: 7fr 2fr;
+    grid-template-columns: 7fr 3fr;
 }
 
 .main p,
-.main h1,
-.main h2 {
+h1,
+h2,
+h3 {
     margin: 0;
     padding: 0;
 }
 
+.main h1 {
+    font-size: 1.2rem;
+}
+
+.main h2 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
 .main .label {
     margin-bottom: 8px;
+}
+
+.main p {
+    color: #475569;
+    font-size: 0.9rem;
 }
 
 .card-container {
@@ -167,4 +182,36 @@ body {
 .icons {
     text-align: right;
     margin-top: auto;
+}
+
+.content-box {
+    min-height: 100px;
+    width: auto
+
+    box-sizing: border-box;
+    padding: 16px;
+
+    background-color: #f8fafc;
+    border-radius: 12px;
+
+}
+
+.announcement.content-box {
+    margin-bottom: 24px;
+}
+
+.content-box h3 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+
+.content-box hr {
+    border: 1px solid #cbd5e1;
+    margin: 10px 0px;
+}
+
+
+.announcement.content-box p {
+    font-size: 0.8rem;
 }
