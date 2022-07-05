@@ -30,9 +30,11 @@
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 2fr 3fr;
+    row-gap: 8px;
 }
 
-.header-top {
+.header-top,
+.header-bottom {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -53,8 +55,32 @@
     border-radius: 50%;
 }
 
+.header-bottom .avatar {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
 .header-top .name {
     margin-right: 16px;
+}
+
+.name-container {
+    margin-right: auto;
+}
+
+.name-container > * {
+    margin: 0;
+    padding: 0;
+}
+
+.header-bottom button {
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #1e293b;
+    color: #f8fafc;
 }
 
 .sidebar {
